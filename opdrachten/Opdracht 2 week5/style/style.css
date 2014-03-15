@@ -1,0 +1,51 @@
+body {
+	border: solid 0.0625em;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+header {
+	background: #606060;
+	height: 4.5em;
+	margin: 1.875em;
+}
+
+h1 {
+	color:white;
+	text-align: center;
+}
+
+h2 {
+	color:white;
+	text-align: center;
+	font-style: normal;
+}
+
+article {
+	background: #606060;
+	width: 35.375em;
+	margin: 1.875em;
+
+}
+
+article > section {
+	background: #9B9B9B;
+	margin: 1.875em;
+}
+
+article > section > section {
+	background: #777777;
+	margin: 1.875em;
+}
+aside {
+	background: #606060;
+	width: 20.6875em;
+	height: 30em;
+	margin: 1.875em;
+	float:left;
+}
+
+aside > section {
+	background: #9B9B9B;
+	margin: 1.875em;
+}
