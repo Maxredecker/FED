@@ -27,7 +27,7 @@ article > section > h1 {
 	text-shadow: 0 0 .1em gold;
 }
 
-article > section {
+article > section:hover {
 	transition: .5s;
 }
 
@@ -73,20 +73,8 @@ video {
 }
 
 /* formulier */
-/* 
-transition-property: waar de transitie effect op heeft, bijv: background-color, height, widht
-transition-duration: kan in ms en s, geeft de tijdsduur aan hoelang een transitie er over doet om te voltooien
-transition-timing-function: geeft het tempo aan hoe de transitie veranderd over de tijdsduur, kan voor voor gedefineerd zijn zoals 'ease' of 'linear' of specifieke nummers 'cubic-bezier(nr,nr,nr,nr)'
-transition-delay: kan in ms en s, geeft de tijdsduur aan voordat de transitie wordt gestart (getriggert)
-transform-scale: verhoudingsgewijze verandering van element
-transform-rotate: rotatie
-transition shorthand, zitten alle propertys achterelkaar dus bijv. transition: backround-color 3s linear; dat is transition: <transition-property> <transition-duration> <transition-timing-function> <transition-delay>;
-*/
 form {
-	transition-property: all;
-	transition-duration: 500ms;
-	transition-timing-function: ease-in-out;
-	transition-delay: 0.2s;
+	transition: .5s;
 }
 form:hover {
 	padding: 5em;

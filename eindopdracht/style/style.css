@@ -27,6 +27,11 @@ article > section > h1 {
 	text-shadow: 0 0 .1em gold;
 }
 
+.no-textshadow h1 {
+	font-size: 150%;
+	background: gray;
+}
+
 article > section {
 	transition: .5s;
 }
@@ -48,11 +53,6 @@ p + p {
 	margin: -1em 0 1em;
 	text-indent: 2em;
 } 
-
-section > p:first-letter {
-	font-size: 200%;
-	font-style: italic;
-}
 
 ol > li {
 	background: rgba(0,0,0,.1);
