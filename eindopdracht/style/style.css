@@ -95,6 +95,7 @@ video:hover {
 
 article img {
 	width: 80%;
+	box-shadow: 0.1em 0.1em #888;
 }
 
 ol > li {
@@ -186,6 +187,25 @@ footer section {
 
 footer > h1 {
 	color: white;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+footer > h2 {
+	color: white;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+footer > h3 {
+	color: white;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+footer > h4 {
+	color: white;
+	font-size: 2em;
 	font-weight: normal;
 }
 
@@ -222,6 +242,9 @@ footer section ul li ul{
 	article > section {
 		border: 1px;
 	}
+	* h1 {
+		text-align: center;
+	}
 }
 
 @media (min-width:750px) {
@@ -248,18 +271,19 @@ footer section ul li ul{
 	footer form {
 		position: absolute;
 		top: 8em;
-		left: 14.2em;
+		left: 13em;
 	}
 	footer form > h1{
 		display: none;
 	}
+	* h1 {
+		text-align: left;
+	}
 }
 
-* {
-	box-sizing: border-box;
-}
 /* code voor modenizers */
-.no-textshadow h1 {
+.no-boxshadow img {
 	font-size: 150%;
 	background: orange;
+	border: solid 2em red;
 }
