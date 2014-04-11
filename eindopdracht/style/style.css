@@ -84,7 +84,7 @@ article > section:hover {
 }
 
 video {
-	border-radius: 8em 8em 0 8em;
+	border-radius: 16em 16em 0 16em;
 	width: 100%;
 	transition: 1s;
 }
