@@ -39,8 +39,8 @@
 				<!-- Submenu Aanmelden -->
 				<li><a>Stages en Projecten</a>
 					<ul>
-						<li><a href="stages.html">Stages</a></li>
-						<li><a href="../projecten/projecten.html">Projecten</a></li>
+						<li><a href="../stages/stages.html">Stages</a></li>
+						<li><a href="projecten.html">Projecten</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -49,44 +49,60 @@
 <!-- Content vorige opdracht -->
 	<form>
 				<fieldset>
-					<legend>Stage</legend>
-					<label>Geschikt voor</label>
-						<select>
-							<option value="tweede">tweedejaars studenten</option>
-							<option value="afstudeer">afstudeer studenten</option>
-							<option value="onbekend">onbekend</option>
-						</select><br/>
-					<label> Hoe lang is de stage?</label>
-						<input type="radio" id="10weken" name="tijd" value="periode" checked="checked">
-							<label for="10weken">10 weken</label>
-						<input type="radio" id="20weken" name="tijd" value="periode">
-							<label for="20weken">20 weken</label>
-						<label>Begin datum</label>
-							<input type="date" name="datum">
-					<h1>Beschrijving werkzaamheden</h1> 
-					<Label>Beschrijving stagewerkzaamheden</Label>
-						<input type="text" name="stagewerkzaamheden" placeholder="werkzaamheden">
-					<h2>Beschrijving stagebedrijf </h2>
-					<label for="name">Bedrijfsnaam</label>
+					<legend>Aanmeldprocedure</legend>
+					<label for="name">Naam</label>
+						<input type="text" id="name" name="name" placeholder="voornaam">
+					<label for="name">Bedrijf</label>
 						<input type="text" name="name" placeholder="bedrijfsnaam">
 					<label for="name">Adres</label>
 						<input type="text" name="name" placeholder="straatnaam + nr">
 					<label for="name">Postcode</label>
 						<input type="text" name="name" placeholder="bijv.1741GS">
-					<label for="name">Sector</label>
-						<input type="text" name="name" placeholder="vakgebied">
-					<label for="name">Core Business</label>
-						<input type="text" name="name" placeholder="opdrachten">
+					<label for="name">Plaats</label>
+						<input type="text" name="name" placeholder="plaatsnaam">
+					<label for="name">Telefoon</label>
+						<input type="tel" name="name" placeholder="telefoon nr.">
+					<label for="name">Email</label>
+						<input type="email" name="name" autocomplete="off" placeholder="email adres">
+					<label>Ik wil mij aanmelden</label>
+						<select>
+							<option value="project">Voor een project</option>
+							<option value="stagebedrijf">Als stagebedrijf</option>
+						</select>
+					<input type="reset" value="Wissen">
+				</fieldset>
+				<fieldset>
+					<legend>Project</legend>
+					<label for="name">Titel</label>
+						<input type="text" name="name" placeholder="projectnaam">
+					<label for="name">Opdrachtomschrijving</label>
+						<input type="text" name="name" placeholder="onderwerp">
+					<label for="name">Doelgroepomschrijving</label>
+						<input type="text" name="name" placeholder="persona">
+					<label for="name">Doelstelling / intentie van het project</label>
+						<input type="text" name="name" placeholder="PvE">
+					<label for="name">Looptijd</label> van
+						<input type="date" name="name"> tot <input type="date" name="name"><br/>
+					<label for="name">Deadline</label>
+						<input type="date" name="name">
+					<label>Geschikt voor</label>
+						<select>
+							<option value="eerste">eerstejaars studenten</option>
+							<option value="tweede">tweedejaars studenten</option>
+							<option value="derde">derdejaars studenten</option>
+							<option value="afstudeer">afstudeer studenten</option>
+							<option value="onbekend">onbekend</option>
+						</select>
 					<label for="name">Opmerking</label>
 						<input type="text" name="name" placeholder="opmerkingen">
 					<input type="reset" value="Wissen">
 				</fieldset>
 	</form>
 	<footer>
-
 		<h1>Sitemap</h1>
 		<section>
-				<li>Opleiding</li>
+			<ul>
+				<li><a>Opleiding</a>
 					<ul>
 						<li>Visie & Beleid</li>
 						<li>Opbouw Studieprogramma</li>
@@ -94,9 +110,12 @@
 						<li>Diploma</li>
 						<li>Beroepen</li>
 					</ul>
+				</li>
+			</ul>
 		</section>
 		<section>
-				<li>Onderwijsprogramma</li>
+			<ul>
+				<li><a>Onderwijsprogramma</a>
 					<ul>
 						<li>Mededelingen</li>
 						<li>Uitagenda</li>
@@ -105,9 +124,12 @@
 						<li>Verdieping 2</li>
 						<li>Afstuderen</li>
 					</ul>
+				</li>
+			</ul>
 		</section>
 		<section>
-				<li>Organisatie</li>
+			<ul>
+				<li><a>Organisatie</a>
 					<ul>
 						<li>Contact</li>
 						<li>Blog</li>
@@ -118,13 +140,18 @@
 						<li>Examencommissie</li>
 						<li>Decaan</li>
 					</ul>
+				</li>
+			</ul>
 		</section>
 		<section>
-				<li>Stages en Projecten</li>
+			<ul>
+				<li><a>Stages en Projecten</a>
 					<ul>
 						<li>Stages</li>
 						<li>Projecten</li>
 					</ul>
+				</li>
+			</ul>
 		</section>
 
 		<h1>Contact</h1>
@@ -135,9 +162,9 @@
 		Email: <a href="#">info@cmd.hva.nl</a>
 		RSS: <a href="#">Feed intranet</a>
 
-		<form>
-			<h1>Zoeken</h1>
-			<input type=search results=5 name=s>
+		<form action="demo_form.asp">
+		<h1>Zoeken</h1>
+  		<input type="search" name="googlesearch"><br>
 		</form>
 
 		<h1>About</h1>
@@ -148,4 +175,4 @@
 		© 2007 Hogeschool van Amsterdam - DMCI - CMD Amsterdam
 		<a href="#">Geef ons feedback</a>
 	</footer>
-	</body>
+</body>
