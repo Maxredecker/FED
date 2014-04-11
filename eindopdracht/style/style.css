@@ -120,7 +120,8 @@ aside p {
 aside h1 {
 	font-weight: bold;
 	font-size: 140%;
-	text-shadow: 0 0 .1em white;
+	color: orange;
+	text-shadow: 0 0 1em white;
 }
 /* code voor formulieren stages projecten */
 fieldset {
@@ -228,7 +229,7 @@ footer section ul li ul{
 		display: none;
 	}
 	article > section {
-		border: 1px;
+		border: 1em;
 	}
 	* h1 {
 		text-align: center;
