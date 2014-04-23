@@ -7,6 +7,8 @@
 	<meta name="keywords" content="Eindoprdacht" />
 	<link href="style/style.css" type="text/css" rel="stylesheet" />
 	<script src="scripts/modernizr.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/behaviour.js"></script>
 </head>
 <!--
 	HTML content: Responsive design:
@@ -25,20 +27,20 @@
 			<ul>
 				<li><a href="eindopdracht.html">Home</a></li>
 					<!-- Submenu Opleidingspagina -->
-				<li><a>Opleiding</a>
-					<ul>
-						<li><a href="http...">Visie &amp; Beleid</a></li>
-						<li><a href="#studieprogramma">Opbouw Studieprogramma</a></li>
-						<li><a href="http...">Competenties</a></li>
-						<li><a href="http...">Diploma</a></li>
-						<li><a href="#beroepen">Beroepen</a></li>
+				<li id="opleiding"><a>Opleiding</a>
+					<ul id="opleidingsubnav">
+						<li><a href="#">Visie &amp; Beleid</a></li>
+						<li><a href="#">Opbouw Studieprogramma</a></li>
+						<li><a href="#">Competenties</a></li>
+						<li><a href="#">Diploma</a></li>
+						<li><a href="#">Beroepen</a></li>
 					</ul>
 				</li>
-				<li><a href="http...">Onderwijsprogramma</a></li>
-				<li><a href="http...">Organisatie</a></li>
+				<li><a href="#">Onderwijsprogramma</a></li>
+				<li><a href="#">Organisatie</a></li>
 				<!-- Submenu Aanmelden -->
-				<li><a>Stages en Projecten</a>
-					<ul>
+				<li id="stages"><a>Stages en Projecten</a>
+					<ul id="stagesubnav">
 						<li><a href="stages/stages.html">Stages</a></li>
 						<li><a href="projecten/projecten.html">Projecten</a></li>
 					</ul>
@@ -89,7 +91,7 @@
 					CMD Amsterdam gelooft in het 'human centered' ontwerpproces. Wij zien een steeds grotere rol weggelegd voor ontwerpers die in staat zijn om te kijken naar de menselijke kant van interactieve media. In onze visie ontwikkelt de 'human centered' aanpak zich steeds meer naar het bestuderen van de mens in zijn sociale en maatschappelijke context als aanleiding voor en onderbouwing van interactieve media concepten. Daarnaast blijft het belangrijk om te kijken naar de mens op het moment dat hij in aanraking komt met interactieve media, zijn gedrag serieus te nemen en te verwerken in het ontwerpproces. CMDA ziet dan ook een meerwaarde in het inbedden van toegepast onderzoek en prototyping in het curriculum en wil studenten hierin helpen en stimuleren.
 	      		</p>
 	        	<p>
-					Bij CMD Amsterdam staat de mens centraal, niet alleen als eindgebruiker van een ontwikkelde toepassing maar ook als mens met sociaal-maatschappelijke context; link:<a href="">Opbouw studieprogramma</a>.
+					Bij CMD Amsterdam staat de mens centraal, niet alleen als eindgebruiker van een ontwikkelde toepassing maar ook als mens met sociaal-maatschappelijke context. <a href="">Opbouw studieprogramma</a>.
 	        	</p>
 	        	<p>
 					CMD Amsterdam heeft een kernprogramma dat alle studenten moeten volgen. De propedeuse is opgebouwd uit 12 kernvakken en 3 projecten. In de jaar 2 en 3 kunnen studenten, naast een kernprogramma, een set profileringsvakken kiezen. Hiermee kunnen ze zich in meer of mindere mate richten op een van de vijf beroepen waar de opleiding voor opleidt.
@@ -185,7 +187,7 @@
 			</p>
 		</section>
 		<section>
-			<h1>Appril</h1>
+			<h1>April</h1>
 			<h1>Van <time datetime="2012-04-02">2012-4-2</time> tot <time datetime="2012-04-30">2012-4-30</time> in Amsterdam</h1>
 			<p>
 				<span><a href="#">M. Blekemolen</a></span>
@@ -210,60 +212,51 @@
 	</aside>
 <!-- Footer informatie -->
 	<footer>
-		<h1>Sitemap</h1>
 		<section>
-			<ul>
-				<li><a>Opleiding</a>
-					<ul>
-						<li>Visie & Beleid</li>
-						<li>Opbouw Studieprogramma</li>
-						<li>Competenties</li>
-						<li>Diploma</li>
-						<li>Beroepen</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<ul>
-				<li><a>Onderwijsprogramma</a>
-					<ul>
-						<li>Mededelingen</li>
-						<li>Uitagenda</li>
-						<li>Propedeuse</li>
-						<li>Verdieping 1</li>
-						<li>Verdieping 2</li>
-						<li>Afstuderen</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<ul>
-				<li><a>Organisatie</a>
-					<ul>
-						<li>Contact</li>
-						<li>Blog</li>
-						<li>Docenten</li>
-						<li>Onderwijsbureau</li>
-						<li>Stagebureau</li>
-						<li>Buitenlandbureau</li>
-						<li>Examencommissie</li>
-						<li>Decaan</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<ul>
-				<li><a>Stages en Projecten</a>
-					<ul>
-						<li>Stages</li>
-						<li>Projecten</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
+      	<h1>Sitemap</h1>
+          <ul>
+            <li>Opleiding
+              <ul>
+                <li>Visie & Beleid</li>
+                <li>Opbouw Studieprogramma</li>
+                <li>Competenties</li>
+                <li>Diploma</li>
+                <li>Beroepen</li>
+              </ul>
+            </li>
+
+            <li>Onderwijsprogramma
+              <ul>
+                <li>Mededelingen</li>
+                <li>Uitagenda</li>
+                <li>Propedeuse</li>
+                <li>Verdieping 1</li>
+                <li>Verdieping 2</li>
+                <li>Afstuderen</li>
+              </ul>
+            </li>
+          
+            <li>Organisatie
+              <ul>
+                <li>Contact</li>
+                <li>Blog</li>
+                <li>Docenten</li>
+                <li>Onderwijsbureau</li>
+                <li>Stagebureau</li>
+                <li>Buitenlandbureau</li>
+                <li>Examencommissie</li>
+                <li>Decaan</li>
+              </ul>
+            </li>
+
+            <li>Stages en Projecten
+              <ul>
+                <li>Stages</li>
+                <li>Projecten</li>
+              </ul>
+            </li>
+          </ul> 
+      </section>
 		<section>
 			<h1>Contact</h1>
 			<p>CMD Amsterdam
