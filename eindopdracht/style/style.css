@@ -198,13 +198,6 @@ input:focus {
 		width: 100%;
 	}
 
-	nav ul:after {
-		content: ""; 
-		clear: 
-		both; 
-		display: block;
-	}
-
 	nav ul li:hover {
 		background: #4b545f;
 		background: linear-gradient(top, #ffaf88 0%, #FFA500 40%);
